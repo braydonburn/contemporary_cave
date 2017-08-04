@@ -13,5 +13,4 @@ class Square extends React.Component {
         );
     }
 }
-
-module.exports = Square;
+export default Square;

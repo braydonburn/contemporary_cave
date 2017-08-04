@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-require('./square.js');
-require('./board.js');
-require('./game.js');
+import Game from './game';
 
 function calculateWinner(squares) {
     const lines = [
@@ -27,6 +24,6 @@ function calculateWinner(squares) {
 }
 
 ReactDOM.render(
-    <Game />,
+    <Game calculateWinner={calculateWinner} />,
     document.getElementById('root')
 );
