@@ -1,25 +1,62 @@
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
 .parallax {
-    /* The image used */
-    background-image: url('../images/header.jpg');
+  /* The image used */
+  background-image: url('../images/header.jpg');
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  -moz-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px
+}
 
-    /* Full height */
-    height: 100%; 
+.navbar {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: auto;
+}
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  position: fixed;
 }
 
 .middle {
-  position: absolute;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.nobreak {
+  white-space: nowrap;
+}
+
+.navbar {
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    line-height: 1.2em;
+    font-size: 50px
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    line-height: 1.2em;
+    font-size: 40px
+  }
+}
