@@ -26,10 +26,13 @@ h2 {
   font-family: 'Lato', sans-serif;
 }
 
-@media (min-width: 767px) {
-  h6 {
-    font-size: 1.5rem;
-  }
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
 }
 
 @media (max-width: 767px) {
