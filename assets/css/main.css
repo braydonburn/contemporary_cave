@@ -26,13 +26,64 @@ h2 {
   font-family: 'Lato', sans-serif;
 }
 
-.navbar-brand.fixed-theme,
-.navbar-container.fixed-theme,
-.navbar.navbar-fixed-top.fixed-theme,
-.navbar-brand,
-.navbar-container{
-    transition: 0.8s;
-    -webkit-transition:  0.8s;
+.navbar-brand.fixed-theme, .navbar-container.fixed-theme, .navbar.navbar-fixed-top.fixed-theme, .navbar-brand, .navbar-container {
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+}
+
+/*SPINNER CODE*/
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+}
+
+.spinner:after, .spinner:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.spinner-1:after {
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: orangered;
+  border-bottom-color: orangered;
+  animation: spinny 1s linear infinite;
+}
+
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/*END SPINNER CODE*/
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
 }
 
 @media (max-width: 767px) {
@@ -40,11 +91,9 @@ h2 {
     line-height: 1.2em;
     font-size: 50px;
   }
-
   h2 {
     font-size: 2.5rem;
   }
-
   h6 {
     font-size: 1rem;
   }
@@ -55,11 +104,9 @@ h2 {
     line-height: 1.2em;
     font-size: 40px;
   }
-
   h2 {
     font-size: 2.3rem;
   }
-
   h6 {
     font-size: 1rem;
   }
