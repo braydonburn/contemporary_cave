@@ -1,7 +1,13 @@
-//On page open, show spinner until page is loaded.
+//On page open, show spinner until page is loaded, then execute fadeOut transition
 var $document = $(document),
   element = $('.onLoad'),
   fadeOut = 'fadeOut';
+  $element = $('.navbar'),
+  navbarDefault = 'indigo',
+  navbarTransparent = 'smooth-scrolling',
+  shadow = 'z-depth-2',
+  fadeInDown = 'fadeInDown';
+
 
 var overlay = document.getElementById('overlay');
 window.addEventListener('load', function() {
@@ -10,15 +16,10 @@ window.addEventListener('load', function() {
 })
 
 // If user scrolls, change transparent nav to coloured
-var $document = $(document),
-  $element = $('.navbar'),
-  navbarDefault = 'indigo';
-navbarTransparent = 'smooth-scrolling';
-
-fadeInDown = 'fadeInDown';
-
 $document.scroll(function() {
-  if ($document.scrollTop() >= 100) {
+  //Every time user scrolls retrieve screen height to avoid resizing errors.
+  height = window.screen.height;
+  if ($document.scrollTop() >= height) {
     //user scrolled more than 100 pixels
     $element.addClass(navbarDefault);
     $element.removeClass(navbarTransparent);
@@ -26,8 +27,25 @@ $document.scroll(function() {
     $element.addClass(fadeInDown);
   } else {
     $element.addClass(navbarTransparent);
+    $element.addClass(shadow);
     $element.removeClass(navbarDefault);
 
     $element.removeClass(fadeInDown);
   }
 });
+
+//When card is hovered over execute rotate.
+$().ready(function() {
+  $('[rel="tooltip"]').tooltip();
+
+});
+
+function rotateCard(btn) {
+  var $card = $(btn).closest('.card-container');
+  console.log($card);
+  if ($card.hasClass('hover')) {
+    $card.removeClass('hover');
+  } else {
+    $card.addClass('hover');
+  }
+}
