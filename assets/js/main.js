@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
 // If user scrolls, change transparent nav to coloured
 $document.scroll(function() {
   //Every time user scrolls retrieve screen height to avoid resizing errors.
-  height = window.screen.height;
+  var height = window.screen.height - 100;
   if ($document.scrollTop() >= height) {
     //user scrolled more than 100 pixels
     $element.addClass(navbarDefault);

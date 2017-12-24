@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Braydon Burn</title>
+  <meta name="description" content="Braydon is a full-stack website developer focused on providing quality products.">
+  <meta name="keywords" content="developer, full-stack, internship, university, web-dev, coding, html, css, javascript, nodejs, django">
+  <meta name="author" content="Braydon Burn">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" rel="stylesheet">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <!-- Main styles -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/manifest.json">
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Braydon Burn">
+  <meta name="application-name" content="Braydon Burn">
+  <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+  <div class="row">
+    <canvas id="myCanvas" style="margin: 0 auto; margin-top: 10%;" width="450" height="500"></canvas>
+  </div>
+
+  <div id="overlay" class="onLoad animated">
+    <h4 class="white-text my-4 text-center" style="padding-top: 20%">Loading</h4>
+    <div class="spinner spinner-1">
+    </div>
+  </div>
+  <!--Main Navigation-->
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top smooth-scrolling animated z-depth-0 indigo">
+      <div class="container">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="../index.html">
+					<img src="../assets/images/logo.png" width="40" height="40">
+				</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Links -->
+
+          <!-- Social Icon  -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/braydon.burn" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/braydonburn" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:info@braydonburn.com">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Collapsible content -->
+
+      </div>
+    </nav>
+    <!--/.Navbar-->
+
+
+
+  </header>
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- MDB core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
+  <!-- Howler for sounds -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.core.min.js"></script>
+  <!--Custom-->
+  <script type="text/javascript" src="../assets/js/main.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109846667-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109846667-2');
+  </script>
+</body>
+
+</html>
