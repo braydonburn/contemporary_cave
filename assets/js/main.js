@@ -7,8 +7,7 @@ var $document = $(document),
   navbarTransparent = 'smooth-scrolling',
   shadow = 'z-depth-2',
   fadeInDown = 'fadeInDown';
-
-
+  
 var overlay = document.getElementById('overlay');
 window.addEventListener('load', function() {
   element.addClass(fadeOut);
@@ -51,19 +50,19 @@ function rotateCard(btn) {
 }
 
 //Execute fadeIn animation when the element is scrolled into view.
-var animateHTML = function () {
+var animateHTML = function() {
   var elems,
     windowHeight
-  var init = function () {
+  var init = function() {
     elems = document.getElementsByClassName('hidden')
     windowHeight = window.innerHeight
     _addEventHandlers()
   }
-  var _addEventHandlers = function () {
+  var _addEventHandlers = function() {
     window.addEventListener('scroll', _checkPosition)
     window.addEventListener('resize', init)
   }
-  var _checkPosition = function () {
+  var _checkPosition = function() {
     for (var i = 0; i < elems.length; i++) {
       var posFromTop = elems[i].getBoundingClientRect().top
       if (posFromTop - windowHeight <= 0) {
