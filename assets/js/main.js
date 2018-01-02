@@ -2,12 +2,12 @@
 var $document = $(document),
   element = $('.onLoad'),
   fadeOut = 'fadeOut';
-  $element = $('.navbar'),
+$element = $('.navbar'),
   navbarDefault = 'indigo',
   navbarTransparent = 'smooth-scrolling',
   shadow = 'z-depth-2',
   fadeInDown = 'fadeInDown';
-  
+
 var overlay = document.getElementById('overlay');
 window.addEventListener('load', function() {
   element.addClass(fadeOut);
@@ -75,3 +75,27 @@ var animateHTML = function() {
   }
 }
 animateHTML().init()
+
+//Smooth scroll to div
+$(document).ready(function() {
+  $("#homeButton").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#home").offset().top
+    }, 1000);
+  });
+  $("#examplesButton").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#examples").offset().top
+    }, 1000);
+  });
+  $("#contactButton").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#footer").offset().top
+    }, 1000);
+  });
+  $("#contactButton2").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#footer").offset().top
+    }, 1000);
+  });
+});
