@@ -1,5 +1,7 @@
 body, html, header, #intro {
   height: 100%;
+  max-width: 100%;
+  overflow-x:hidden;
 }
 
 #intro {
