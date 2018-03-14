@@ -1,4 +1,4 @@
-body, html, header, #intro{height:100%;max-width:100%;overflow-x:hidden;}
+body, html, header, #intro{height:100%;max-width:100%;}
 #intro{background-image:url('../images/header.jpg');-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;min-height:735px;-webkit-box-shadow:rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;-moz-box-shadow:rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;box-shadow:rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;}
 .top-nav-collapse{background-color:#24355C;}
 h1{font-family:'Raleway', sans-serif;font-weight:900;}
