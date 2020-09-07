@@ -5,7 +5,7 @@
   braydon.dev
 </h1>
 <p align="center">
-<a href="braydon.dev" target="_blank">braydon.dev</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+<a href="braydon.dev" target="_blank">braydon.dev</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/keen-neumann-f24453/deploys" target="_blank">
